@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="clearfix">
+        <%= render "layouts/navbar" %>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

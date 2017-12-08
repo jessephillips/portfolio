@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  get :about,   controller: :pages
+  get :faq,     controller: :pages
+  get :home,    controller: :pages
+  get :resume,  controller: :pages
+
+  root 'pages#home'
 end
