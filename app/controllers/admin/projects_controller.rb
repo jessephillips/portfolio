@@ -1,6 +1,7 @@
 require 'admin/admin_controller.rb'
 
 class Admin::ProjectsController < AdminController
+  before_action :redirect_unless_user_is_admin
   before_action :set_project, only: [:edit, :update, :destroy]
 
   # GET /projects
