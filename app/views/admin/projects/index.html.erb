@@ -10,7 +10,7 @@
       <th>Short desc</th>
       <th>Long desc</th>
       <th>Project link</th>
-      <th></th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -22,10 +22,14 @@
         <td><%= project.short_desc %></td>
         <td><%= project.long_desc %></td>
         <td><%= project.project_link %></td>
-        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Show', project, target: :blank %></td>
+        <td><%= link_to 'Edit', edit_admin_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+<%= link_to 'New Project', new_admin_project_path, class: 'btn btn-primary'%>
