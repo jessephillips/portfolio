@@ -13,3 +13,18 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+window.onload = function() {
+  // var h = window.innerHeight;
+  // var el = document.getElementById("footer");
+  // var oh = el.getBoundingClientRect().top;
+  // console.log(el);
+  // console.log('height: ' + h + ', offset: ' + oh);
+  // 
+  // var toAdd = h - oh - 50;
+  // toAdd += 'px';
+  // console.log(toAdd);
+  // var fh = document.getElementById("full-height");
+  // console.log(fh);
+  // fh.style.height = toAdd;
+};

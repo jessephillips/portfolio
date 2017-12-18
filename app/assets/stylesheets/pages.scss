@@ -1,3 +1,39 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.nav-wrapper {
+  background-color: #444;
+}
+
+.nav.navbar-nav a {
+  color: #EEE;
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.nav.navbar-nav a:hover {
+  color: #444;
+  background-color: #EEE;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+footer {
+  background-color: #444;
+}
+
+.proj-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}

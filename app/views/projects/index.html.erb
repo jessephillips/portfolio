@@ -1,31 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Projects</h1>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Image</th>
-      <th>Short desc</th>
-      <th>Long desc</th>
-      <th>Project link</th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.title %></td>
-        <td><%= project.image %></td>
-        <td><%= project.short_desc %></td>
-        <td><%= project.long_desc %></td>
-        <td><%= project.project_link %></td>
-        <td><%= link_to 'Show', project %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<div class="row">
+  <% @projects.each do |project| %>
+    <div class="col-sm-4">
+      <div class="proj-card">      
+        <h3><%= project.title %></h3>
+        <%= project.image %>
+        <p><%= project.short_desc %></p>
+        <%= link_to 'live project', project.project_link %><br />
+        <%= link_to 'More info', project %>
+      </div>
+    </div>
+  <% end %>
+</div>
